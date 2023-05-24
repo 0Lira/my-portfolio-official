@@ -124,8 +124,8 @@ img{
     padding-top: 110px;
   }
   .box-conhecimentos{
-    width: 300px;
-    height: 500px;
+    width: 40%;
+    height: 100%;
     background-color: #1c1b29;
     border-radius: 16px;
     border: #F6F1F1 solid 2px;
@@ -139,17 +139,24 @@ img{
     margin: 10px;
   }
   .icons-dev{
-    font-size: 80px;
-    color: #F6F1F1;
     display: flex;
+    color: #F6F1F1;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .icons-dev>i{
-    margin: 20px 20px;
-    padding: 10px;
+  .icons-dev>div{
+    display: flex;
+    align-items: center;
   }
-  
+  .icons-dev>div>i{
+    margin: 0 10%;
+    text-align: center;
+    width: 30%;
+  }
+  .icons2{
+    margin: 20% 0;
+  }
   /*fim--do--sobre*/
 
   #projetos{
@@ -186,7 +193,15 @@ img{
     background: linear-gradient(90deg, #1c1b29 0%, #0a0a11 32%, #000000 66%);
   }
 
-  @media  screen and (max-width: 900px) {
+  @media  screen and (max-width: 1020px){
+    .icons-dev>div>i{
+      font-size: 50px;
+    }
+    .icons-dev{
+      margin-top: 10%;
+    }
+  }
+  @media  screen and (max-width: 900px)/* and (min-width: 540px)*/{
     #header{
         justify-content: space-between;
     }
@@ -237,9 +252,9 @@ img{
         margin-top: 50px;
     }
     .mini-circle{
-        width: 70px;
-        height: 70px;
-        margin-left: 150px;
+      width: 70px;
+      height: 70px;
+      margin-left: 150px;
     }
     #image1{
         width: 80%;
@@ -261,14 +276,18 @@ img{
     }
     .box-conhecimentos{
         width: 80%;
-        height: 60%;
+        height: 100%;
         margin-top: 10px;
     }
     .icons-dev{
-        font-size: 50px;
+        flex-direction: column;
+        color: #F6F1F1;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 2%;
     }
-    .icons-dev>i{
-        margin: 10px;
+    .icons-dev>div>i{
+      font-size: 50px;
     }
     #projetos{
         flex-direction: column;
@@ -284,5 +303,55 @@ img{
     #footer{
         flex-direction: column;
         margin-top: -70px;
+    }
+  }
+  @media screen and (max-width: 539px){
+    .icons-dev>div>i{
+      font-size: 45px;
+    }
+    .texto{
+      font-size: 14px;
+    }
+    .titulo-box>h2{
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .contato-nav{
+      display: flex;
+      flex-direction: column;
+    }
+    .welcome-content{
+      font-size: 130%;
+    }
+  }
+  @media screen and (max-width: 340px){
+    .icons-dev>div>i{
+      font-size: 40px;
+      margin: 2%;
+    }
+    .texto{
+      font-size: 12px;
+    }
+    .contato-nav{
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar>a{
+      font-size: 16px;
+    }
+    .welcome-content{
+      font-size: 100%;
+    }
+    .logomarca>h2{
+      font-size: 18px;
+    }
+    .circle-animation{
+      width: 180px;
+      height: 180px;
+    }
+    .mini-circle{
+      width: 60px;
+      height: 60px;
+      margin-left: 135px;
     }
   }
