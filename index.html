@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>My Portfolio | Front-End</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+    />
+  </head>
+  <body>
     <header id="header">
-        <div class="logomarca">
-            <h2>< Lira Code ></h2>
+      <div class="logomarca">
+        <h2>< Lira Code ></h2>
+      </div>
+      <button id="toggleSidebar"><i class="fas fa-bars"></i></button>
+      <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#projetos">Projetos</a>
+        <div class="barra"></div>
+        <div class="contato-nav">
+          <a href="https://t.me/liraDev" target="_blank"
+            ><i class="fab fa-telegram"></i
+          ></a>
+          <a href="https://github.com/0lira" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/patrick-lira-62a946226/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </div>
-        <button id="toggleSidebar"><i class="fas fa-bars"></i></button>
-        <nav class="navbar" id="navbar">
-            <a href='#home'>Home</a>
-            <a href='#sobre'>Sobre Mim</a>
-            <a href='#projetos'>Projetos</a>
-            <div class="barra"></div>
-            <div class="contato-nav">
-                <a href='https://t.me/liraDev' target='_blank'><i class="fab fa-telegram"></i></a>
-                <a href='https://github.com/0lira'target='_blank'><i class="fab fa-github"></i></a>
-                <a href='https://www.linkedin.com/in/patrick-lira-62a946226/' target='_blank'><i class="fab fa-linkedin"></i></a>
-            </div>
-        </nav>
+      </nav>
     </header>
     <main id="main">
-        <section id="home">
-            <div class="welcome-content">
-              <p>/*Hello World!*/</p>
-              <h2>Eu sou Patrick Lira,</h2>
-              <p>Desenvolvedor Web Front-End.</p>
-            </div>
-            <div class="welcome-animation">
-              <div class="circle-animation">
-                <div class="mini-circle"></div>
-                <img id="image1" src="./images/image1.webp">
-              </div>
-            </div>
-        </section>
-        <section id="sobre">
-          <div class="texto">
-            <h2>Sobre Mim</h2>
-            <p>Olá! Meu nome é Patrick Lira e sou de São Paulo, tenho 20 anos e sou apaixonado por Tecnologia da Informação.<br>
-            Possuo habilidades de Desenvolvedor Front-End e tenho muito interesse em adquirir uma vaga na área para obter mais experiência.<br>
-            Estou estudando com cursos da Danki Code e em muitas outras documentações sendo um autodidata, onde no momento estou aprendendo React.Js.</p>
+      <section id="home">
+        <div class="welcome-content">
+          <p>/*Hello World!*/</p>
+          <h2>Eu sou Patrick Lira,</h2>
+          <p>Desenvolvedor Web Front-End.</p>
+        </div>
+        <div class="welcome-animation">
+          <div class="circle-animation">
+            <div class="mini-circle"></div>
+            <img id="image1" src="./images/image1.webp" />
           </div>
-          <div class="box-conhecimentos">
-            <div class="titulo-box">
-              <h2>Conhecimentos</h2>
+        </div>
+      </section>
+      <section id="sobre">
+        <div class="texto">
+          <h2>Sobre Mim</h2>
+          <br />
+          <p>
+            Olá mundo! Meu nome é Patrick Lira e sou de São Paulo, tenho 23 anos
+            e sou apaixonado por Tecnologia da Informação.<br />
+            Possuo habilidades de Desenvolvedor Front-End e tenho muito
+            interesse em adquirir uma vaga na área para obter mais
+            experiência.<br />
+            Estou cursando Bacharelado Em Engenharia De Software pela Unicesumar
+            e estudando com cursos da Danki Code e entre outras instituições de
+            ensino além das documentações.
+          </p>
+          <br />
+        </div>
+        <div class="box-conhecimentos">
+          <div class="titulo-box">
+            <h2>Conhecimentos</h2>
+          </div>
+          <div class="icons-dev">
+            <div>
+              <i class="fab fa-html5 fa-4x"></i>
+              <i class="fab fa-css3-alt fa-4x"></i>
+              <i class="fab fa-js-square fa-4x"></i>
             </div>
-            <div class="icons-dev">
-              <div>
-               <i class="fab fa-html5 fa-4x"></i>
-               <i class="fab fa-css3-alt fa-4x"></i>  
-               <i class="fab fa-js-square fa-4x"></i>
-              </div>
-              <div class="icons2">
-                <i class="fab fa-react fa-4x"></i>
-                <i class="fab fa-git-alt fa-4x"></i>      
-                <i class="fab fa-github-square fa-4x"></i>
-              </div>
+            <div class="icons2">
+              <i class="fab fa-react fa-4x"></i>
+              <i class="fab fa-git-alt fa-4x"></i>
+              <i class="fab fa-github-square fa-4x"></i>
             </div>
           </div>
-        </section>
-        <section id="projetos">
-          <div class="titulo-page">
-            <h2>Projetos</h2>
-          </div>
-          <div class="box-projetos"></div>
-        </section>
-        <footer id="footer">
-          <p>< Lira Code ></p>
-          <p>©2023 por Patrick Lira.</p>
-          <small>Todos os direitos reservados.</small>
-        </footer>
+        </div>
+      </section>
+      <section id="projetos">
+        <div class="titulo-page">
+          <h2>Projetos</h2>
+        </div>
+        <div class="box-projetos"></div>
+      </section>
+      <footer id="footer">
+        <!--<p>< Lira Code ></p>-->
+        <p>©2023 por Patrick Lira.</p>
+        <small>Todos os direitos reservados.</small>
+      </footer>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
