@@ -124,9 +124,9 @@ img {
   color: #f6f1f1;
   width: 30%;
 }
-.texto > h2 {
-  /*padding-top: 110px;*/
-}
+/*.texto > h2 {
+  padding-top: 110px;
+}*/
 .box-conhecimentos {
   width: 40vw; /*500px*/
   height: 60vh; /*600px*/
@@ -134,8 +134,8 @@ img {
   border-radius: 16px;
   border: #f6f1f1 solid 2px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 .titulo-box > h2 {
   display: flex;
@@ -143,29 +143,34 @@ img {
   text-align: center;
   color: #f6f1f1;
   padding: 10px;
-  margin: 50px 10px;
+  margin-top: 10%;
 }
 .icons-dev {
   display: flex;
   color: #f6f1f1;
   flex-direction: column;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   margin: auto;
   width: 100%;
-  height: 80%;
+  height: 70%;
   justify-content: center;
 }
-.icons-dev > div {
+.icons1 {
   display: flex;
   align-items: center;
-}
-.icons-dev > div > i {
-  margin: 0 10%;
+  margin: 20% 0;
   text-align: center;
-  width: 30%;
+  width: 100%;
+  justify-content: space-around;
 }
 .icons2 {
+  display: flex;
+  align-items: center;
   margin: 20% 0;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 /*fim--do--sobre*/
 
@@ -274,6 +279,7 @@ img {
   }
   #sobre {
     flex-direction: column;
+    height: 125vh;
   }
   .texto {
     width: 80%;
@@ -337,7 +343,7 @@ img {
     font-size: 130%;
   }
   #sobre {
-    height: 120vh;
+    height: 125vh;
   }
 }
 @media screen and (max-width: 340px) {
